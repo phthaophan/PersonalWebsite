@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="design, portfolio, digital design, webdesign, interaction design, generative design, creative coding, front-end development, graphic design" />
+
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Phuong Thao Phan">
+    
+    <title> ツ Memoriam –– Phuong Thao Phan | Digital Designer </title>
+    <link rel="icon" type="image/png" href="../sources/base/logo.png" sizes="96x96">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header id="basePlaceholder"></header>
+
+    <div class="grid-container" id="individualProject">
+
+        <div id="introImage">
+            <img src="../sources/memoriam_content/memoriam_1.jpg" alt="Project Thumbnail">
+        </div>
+
+        <div id=projectIntro>
+            <h2>Memoriam &ndash; </br> an interactive object </br> to overcome distances </h2>
+            <p class="introText"> Death seems to be one of the hardest topics to ever talk about. Even harder when a close person
+                actually
+                dies. In those times the best way to grief is by having the support of someone else. But what if our
+                friends and family are hundreds and hundreds of miles away? Therefore we created Memoriam.
+            </p>
+
+        </div>
+
+        <div id=projectInfo>
+            <p> Memoriam is a website connected to two boxes inside each other. Every time someone
+                is expressing condolences, the box lights up. Simultaneously, the inner box goes
+                down and reveals a video of the person reminiscing about. The purpose is to have
+                the possibility to show support without being physically present.
+            </p>
+        </div>
+
+        <div id="projectScreens">
+            <img class="singleScreen" src="../sources/memoriam_content/memoriam_7.jpg" alt="Project Image">
+            <img class="singleScreen" src="../sources/memoriam_content/memoriam_3.jpg" alt="Project Image">
+            <img class="singleScreen" src="../sources/memoriam_content/memoriam_2.jpg" alt="Project Image">
+            <img class="singleScreen" src="../sources/memoriam_content/memoriam_4.jpg" alt="Project Image">
+        </div>
+
+        <div id="outroImage">
+            <img src="../sources/memoriam_content/memoriam_5.jpg" alt="Project Gif">
+        </div>
+
+    </div>
+
+    <div id=paginationPlaceholder></div>
+
+    <footer id="footerPlaceholder"></footer>
+
+
+</body>
+
+<script>
+
+    $(function () {
+        $("#basePlaceholder").load("../base.html");
+        $("#paginationPlaceholder").load("./pagination.html");
+        $("#footerPlaceholder").load("../footer.html");
+    });
+
+</script>
+
+</html>

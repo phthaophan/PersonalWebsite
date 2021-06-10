@@ -1,0 +1,38 @@
+<div class="grid-container">
+    <div class="paginationArrows">
+        <a id="prevArrow" onclick="prev()" id="prev">&#8636; prev</a>
+        <a id="nextArrow" onclick="next()" id="next">next &#8641;</a>
+    </div>
+</div>
+
+<script>
+
+    let pages = ["shapedbynews.html", "galluhree.html", "memoriam.html"];
+    let currentUrl = window.location.href;
+    strLength = currentUrl.lastIndexOf('/');
+    currentUrl = currentUrl.substring(strLength + 1, currentUrl.length);
+    let i = pages.indexOf(currentUrl);
+    let arrowUp = document.getElementById("up");
+    let arrowDown = document.getElementById("down");
+
+    function next() {
+        if (i + 1 == pages.length) {
+            i = 0;
+        } else {
+            i++;
+        }
+        let goTo = pages[i];
+        window.location = goTo;
+    }
+
+    function prev() {
+        if (i == 0) {
+            i = pages.length - 1;
+        } else {
+            i--;
+        }
+        let goTo = pages[i];
+        window.location = goTo;
+    }
+
+</script>

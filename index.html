@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="design, portfolio, digital design, webdesign, interaction design, generative design, creative coding, front-end development, graphic design" />
+
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Phuong Thao Phan">
+    
+    <title> ツ Phuong Thao Phan | Digital Designer </title>
+    <link rel="icon" type="image/png" href="../sources/base/logo.png" sizes="96x96">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+    <script src="./sources/build/perlin.js"></script>
+
+</head>
+
+<body>
+    <script type="module" src="./script.js"></script>
+
+    <header id="basePlaceholder"></header>
+    
+    <div class="grid-container" id="allProjects">
+
+        <main id="landing">
+            <canvas id="blob"></canvas>
+
+            <h1> Hi, my name is &mdash; Thao. I am a <br> <i>&#042;digital designer.</i> </h1>
+        </main>
+
+        <div id="project1">
+            <a href="./projects/shapedbynews.html">
+                <img class="projectPicture" src="./sources/shapedbynews_content/shapedbynews_7.jpg"
+                    alt="Shaped by News Project Thumbnail">
+            </a>
+            <div class="projectCaption">
+                <p class="projectName"> Shaped by News</p>
+                <p class="workType"> Interactive Website </p>
+            </div>
+        </div>
+
+        <div id="project2">
+            <a href="./projects/galluhree.html">
+                <img class="projectPicture" src="./sources/galluhree_content/galluhree_4.jpg"
+                    alt="Galluhree Project Thumbnail">
+            </a>
+            <div class="projectCaption">
+                <p class="projectName"> Galluhree </p>
+                <p class="workType"> Digital Art Experience </p>
+            </div>
+        </div>
+
+        <div id="project3">
+            <a href="./projects/memoriam.html">
+                <img class="projectPicture" src="./sources/memoriam_content/memoriam_1.jpg"
+                    alt="Memoriam Project Thumbnail">
+            </a>
+            <div class="projectCaption">
+                <p class="projectName"> Memoriam </p>
+                <p class="workType"> Interaction Design </p>
+            </div>
+        </div>
+
+        <div id="infoText">
+            <!-- <p> <a href="./projects/shapedbynews.html">INTERACTIVE WEBSITES</a> / 3D SPACES / </br>
+            GRAPHIC DESIGN / <a href="./projects/memoriam.html">INTERACTION DESIGN</a> / </br>
+            <a href="./projects/galluhree.html">UNIQUE EXPERIENCES</a> / PROTOTYPES /</br>
+            FRONTEND DEVELOPMENT </p> -->
+            <h3><a href="./projects/shapedbynews.html">Interactive Websites</a> / 3D Spaces /
+                Graphic Design / <a href="./projects/memoriam.html">Interaction Design</a> /
+                <a href="./projects/galluhree.html">Unique Experiences</a> / Prototypes /
+                Front-end Development
+            </h3>
+        </div>
+
+    </div>
+
+
+
+    <footer id="footerPlaceholder"></footer>
+
+</body>
+
+<script>
+
+    $(function () {
+        $("#basePlaceholder").load("../base.html");
+        $("#footerPlaceholder").load("../footer.html");
+    });
+
+</script>
+
+</html>

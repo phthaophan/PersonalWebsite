@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="design, portfolio, digital design, webdesign, interaction design, generative design, creative coding, front-end development, graphic design" />
+
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Phuong Thao Phan">
+    
+    <title> ツ galluhree –– Phuong Thao Phan | Digital Designer </title>
+    <link rel="icon" type="image/png" href="../sources/base/logo.png" sizes="96x96">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header id="basePlaceholder"></header>
+
+    <div class="grid-container" id="individualProject">
+
+        <div id="introImage">
+            <img src="../sources/galluhree_content/galluhree_4.jpg" alt="Project Thumbnail">
+        </div>
+
+        <div id=projectIntro>
+            <h2> galluhree &ndash; </br> a virtual gallery using </br> an eye tracker </h2>
+            <p class="introText"> Due to the COVID-19 pandemic quite a few things have changed, including cultural events.
+                This is an approach on a digital art experience, bringing a gallery to everyone's home and putting a
+                twist on the regular ones everyone knows.
+            </p>
+        </div>
+
+        <div id=projectInfo>
+            <p>While visiting the website and looking at historic artworks, the algorithm is working
+                on a new piece of art. Behind the scenes, an eyetracker is collecting all the viewer’s eye
+                movements which are then transformed into a unique artwork.
+                </br> </br>
+                See for yourself and create your own artwork!
+                <a href="https://galluhree.web.app/">www.galluhree.web.app</a>
+
+            </p>
+        </div>
+
+        <div id="projectScreens">
+            <img class="singleScreen" src="../sources/galluhree_content/galluhree_2.jpg" alt="Project Image">
+            <img class="singleScreen" src="../sources/galluhree_content/galluhree_10.jpg" alt="Project Image">
+            <img class="singleScreen" src="../sources/galluhree_content/galluhree_8.jpg" alt="Project Image">
+            <img class="singleScreen" src="../sources/galluhree_content/galluhree_9.jpg" alt="Project Image">
+        </div>
+
+        <div id="outroImage">
+            <img src="../sources/galluhree_content/galluhree_gif.gif" alt="Project Gif">
+        </div>
+
+    </div>
+
+    <div id=paginationPlaceholder></div>
+
+    <footer id="footerPlaceholder"></footer>
+
+
+
+</body>
+
+<script>
+
+    $(function () {
+        $("#basePlaceholder").load("../base.html");
+        $("#paginationPlaceholder").load("./pagination.html");
+        $("#footerPlaceholder").load("../footer.html");
+    });
+
+</script>
+
+</html>
