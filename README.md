@@ -1,2 +1,3 @@
-# personal-portfolio
+# PersonalPortfolio
+
 personal website 
